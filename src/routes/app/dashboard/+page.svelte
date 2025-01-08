@@ -1,6 +1,40 @@
 <script>
     import ListViewIcon from "$lib/images/list.png";
     import GridViewIcon from "$lib/images/layout.png";
+
+    import { onMount } from "svelte";
+
+    // const getCurrentLoggedinUser = async () => {
+    //     try{
+    //         const currentUserToken = localStorage.getItem("access_token");
+    //         if(!currentUserToken){
+    //             console.log("You are not logged in")
+    //         };
+
+    //         const apiUrl = "http://localhost:5000/api/v1/authentication/current_user/";
+    //         const response = await fetch(apiUrl, {
+    //             method: "GET",
+    //             headers: {
+    //                 "Authorization": `Bearer ${currentUserToken}`,
+    //                 "Content-Type": "application/json"
+    //             }
+    //         })
+
+    //         if(response.ok){
+    //             const data = await response.json();
+    //             console.log(data);
+    //             console.log("current user: ", data.current_user)
+    //         }
+
+    //     }catch(error){
+    //         console.log(error)
+    //     }
+    // };
+
+    // onMount(() => {
+    //     getCurrentLoggedinUser();
+
+    // });
 </script>
 
 <div class="main_outer_dashboard_page_container">

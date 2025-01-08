@@ -38,11 +38,11 @@
                     <h4 class="file_title">This is the title of the file</h4>
                     <p class="file_date_uploaded">date uploaded: 22/10/2024</p>
 
-                    <div class="uploaded_file_categories">
+                    <!-- <div class="uploaded_file_categories">
                         <div class="uploaded_file_single_category">Category 1</div>
                         <div class="uploaded_file_single_category">Category 2</div>
                         <div class="uploaded_file_single_category">Category 3</div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -54,11 +54,11 @@
                     <h4 class="file_title">This is the title of the file</h4>
                     <p class="file_date_uploaded">date uploaded: 22/10/2024</p>
 
-                    <div class="uploaded_file_categories">
+                    <!-- <div class="uploaded_file_categories">
                         <div class="uploaded_file_single_category">Category 1</div>
                         <div class="uploaded_file_single_category">Category 2</div>
                         <div class="uploaded_file_single_category">Category 3</div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -70,11 +70,11 @@
                     <h4 class="file_title">This is the title of the file</h4>
                     <p class="file_date_uploaded">date uploaded: 22/10/2024</p>
 
-                    <div class="uploaded_file_categories">
+                    <!-- <div class="uploaded_file_categories">
                         <div class="uploaded_file_single_category">Category 1</div>
                         <div class="uploaded_file_single_category">Category 2</div>
                         <div class="uploaded_file_single_category">Category 3</div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -86,11 +86,11 @@
                     <h4 class="file_title">This is the title of the file</h4>
                     <p class="file_date_uploaded">date uploaded: 22/10/2024</p>
 
-                    <div class="uploaded_file_categories">
+                    <!-- <div class="uploaded_file_categories">
                         <div class="uploaded_file_single_category">Category 1</div>
                         <div class="uploaded_file_single_category">Category 2</div>
                         <div class="uploaded_file_single_category">Category 3</div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -102,11 +102,11 @@
                     <h4 class="file_title">This is the title of the file</h4>
                     <p class="file_date_uploaded">date uploaded: 22/10/2024</p>
 
-                    <div class="uploaded_file_categories">
+                    <!-- <div class="uploaded_file_categories">
                         <div class="uploaded_file_single_category">Category 1</div>
                         <div class="uploaded_file_single_category">Category 2</div>
                         <div class="uploaded_file_single_category">Category 3</div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
