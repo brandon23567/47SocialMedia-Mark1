@@ -33,6 +33,9 @@
         const codeValue = queryParams.get("code");
         const stateValue = queryParams.get("state");
 
+        console.log("Value of code: ", codeValue);
+        console.log("Value of state: ", stateValue);
+
         if(codeValue && stateValue){
             const getTokenApiUrl = `https://graph.facebook.com/v21.0/oauth/access_token?client_id=${appId}&redirect_uri=${redirectUri}&client_secret=${appSecret}&code={codeValue}$state=${stateValue}`
 
