@@ -23,7 +23,8 @@
     const getTokenAndStateValues = async () => {
         const appId = "609016734854950";
         const redirectUri = "https://47-social-media-mark1-1klj.vercel.app/";
-        const appSecret = "cf838cfeafecd8e3a3f6a87df3a29adb";
+        // const appSecret = "cf838cfeafecd8e3a3f6a87df3a29adb";
+        // const appSecret = "";
 
         const fullUrl = window.location.href;
         const urlObject = new URL(fullUrl);
@@ -37,7 +38,7 @@
         console.log("Value of state: ", stateValue);
 
         if(codeValue && stateValue){
-            const getTokenApiUrl = `https://graph.facebook.com/v21.0/oauth/access_token?client_id=${appId}&redirect_uri=${redirectUri}&client_secret=${appSecret}&code={codeValue}$state=${stateValue}`
+            const getTokenApiUrl = `https://graph.facebook.com/v21.0/oauth/access_token?client_id=${appId}&redirect_uri=${redirectUri}&client_secret={something_here}&code={codeValue}$state=${stateValue}`
 
             const response = await fetch(getTokenApiUrl, {
                 method: "GET"
