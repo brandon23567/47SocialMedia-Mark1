@@ -33,7 +33,7 @@
         formData.append("profile_image", profile_image)
 
         try{
-            const url = `${productionApiUrl}api/v1/authentication/signup_user/`;
+            const url = `${productionApiUrl}api/v1/authentication/signup_user`;
             const response = await fetch(url, {
                 method: "POST",
                 body: formData

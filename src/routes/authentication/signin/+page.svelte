@@ -15,7 +15,7 @@
         formData.append("password", password);
 
         try{
-            const apiUrl = `${productionApiUrl}api/v1/authentication/signin_user/`;
+            const apiUrl = `${productionApiUrl}api/v1/authentication/signin_user`;
             const response = await fetch(apiUrl, {
                 method: "POST",
                 headers: {
