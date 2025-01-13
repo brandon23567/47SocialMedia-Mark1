@@ -16,7 +16,7 @@ const config = {
 
 	kit: {
 		adapter: adapter({
-		runtime: "nodejs20.x",
+			runtime: "nodejs20.x",
 		}),
 	},
 };
