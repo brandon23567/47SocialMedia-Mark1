@@ -6,6 +6,10 @@
     import CalendarIcon from "$lib/images/sidenavbar_images/calendar.png";
     import AnalyticsIcon from "$lib/images/sidenavbar_images/monitor.png";
     import SocialProfilesIcon from "$lib/images/sidenavbar_images/add-user.png";
+
+    const productionApiUrl = "https://47-social-media-mark1-backend.vercel.app/";
+    const localDevelopmentApiUrl = "http://localhost:5000/";
+    
 </script>
 
 <div class="main_outer_small_sidenavbar_container">

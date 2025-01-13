@@ -5,6 +5,9 @@
     let username = "";
     let password = "";
 
+    const productionApiUrl = "https://47-social-media-mark1-backend.vercel.app/";
+    const localDevelopmentApiUrl = "http://localhost:5000/";
+
     const signinUser = async (e: Event) => {
         e.preventDefault();
         const formData = new FormData();
@@ -12,7 +15,7 @@
         formData.append("password", password);
 
         try{
-            const apiUrl = "http://localhost:5000/api/v1/authentication/signin_user/";
+            const apiUrl = `${productionApiUrl}api/v1/authentication/signin_user/`;
             const response = await fetch(apiUrl, {
                 method: "POST",
                 headers: {

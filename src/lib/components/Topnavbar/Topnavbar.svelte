@@ -2,6 +2,10 @@
     import NotificationsIcon from "$lib/images/notification.png";
     import OtherAppsIcon from "$lib/images/list.png";
     import SettingsIcon from "$lib/images/settings-gear-icon.png";
+
+    const productionApiUrl = "https://47-social-media-mark1-backend.vercel.app/";
+    const localDevelopmentApiUrl = "http://localhost:5000/";
+    
 </script>
 
 <div class="main_outer_topnavbar_container">

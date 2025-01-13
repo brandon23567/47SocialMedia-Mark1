@@ -9,6 +9,9 @@
     import AnalyticsIcon from "$lib/images/sidenavbar_images/monitor.png";
     import SocialProfilesIcon from "$lib/images/sidenavbar_images/add-user.png";
 
+    const productionApiUrl = "https://47-social-media-mark1-backend.vercel.app/";
+    const localDevelopmentApiUrl = "http://localhost:5000/";
+
     let currentUserUsername = "";
     let currentUserProfileImage = "";
 
@@ -19,7 +22,7 @@
                 console.log("You are not logged in")
             };
 
-            const apiUrl = "http://localhost:5000/api/v1/authentication/current_user/";
+            const apiUrl = `${productionApiUrl}api/v1/authentication/current_user/`;
             const response = await fetch(apiUrl, {
                 method: "GET",
                 headers: {
@@ -92,7 +95,7 @@
 
             <div class="current_user_container">
                 <div class="current_user_leftside_container">
-                    <img src={`http://localhost:5000/${currentUserProfileImage}`} class="current_user_profile_img" alt="current users profile" />
+                    <img src={`${productionApiUrl}${currentUserProfileImage}`} class="current_user_profile_img" alt="current users profile" />
                 </div>
                 <div class="current_user_rightside_container">
                     <a href="/" class="current_user_username">@{currentUserUsername}</a>

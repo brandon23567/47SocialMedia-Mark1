@@ -2,6 +2,9 @@
     import { onMount } from "svelte";
     import { goto } from "$app/navigation";
 
+    const productionApiUrl = "https://47-social-media-mark1-backend.vercel.app/";
+    const localDevelopmentApiUrl = "http://localhost:5000/";
+
     let username = "";
     let email = "";
     let password = "";
@@ -30,7 +33,7 @@
         formData.append("profile_image", profile_image)
 
         try{
-            const url = "http://localhost:5000/api/v1/authentication/signup_user/";
+            const url = `${productionApiUrl}api/v1/authentication/signup_user/`;
             const response = await fetch(url, {
                 method: "POST",
                 body: formData
@@ -50,7 +53,7 @@
             console.log(error);
             alert("Signup failed")
         }
-    }
+    };
 </script>
 
 <div class="main_outer_signup_page_container">
