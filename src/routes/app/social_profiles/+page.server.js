@@ -11,11 +11,14 @@ export async function load(){
     const appId = import.meta.env.VITE_FB_APP_ID;
     const appSecret = import.meta.env.VITE_FB_APP_SECRET_KEY;
 
+    console.log("app id is: ", appId);
+    console.log("app secret is: ", appSecret);
+
     const codeValue = queryParams.get("code");
     const stateValue = queryParams.get("state");
 
     if(codeValue && stateValue){
-        const getTokenApiUrl = `https://graph.facebook.com/v21.0/oauth/access_token?client_id=${appId}&redirect_uri=${redirectUri}&client_secret={something_here}&code=${codeValue}$state=${stateValue}`
+        const getTokenApiUrl = `https://graph.facebook.com/v21.0/oauth/access_token?client_id=${appId}&redirect_uri=${redirectUri}&client_secret=${appSecret}&code=${codeValue}$state=${stateValue}`
 
         const response = await fetch(getTokenApiUrl);
 
