@@ -1,5 +1,3 @@
-// import { FB_APP_ID } from "$env/dynamic/private"
-
 export async function load(){
     const fullUrl = window.location.href;
     const urlObject = new URL(fullUrl);
@@ -14,21 +12,23 @@ export async function load(){
     console.log("app id is: ", appId);
     console.log("app secret is: ", appSecret);
 
-    const codeValue = queryParams.get("code");
-    const stateValue = queryParams.get("state");
+    console.log("Function is actually running");
 
-    if(codeValue && stateValue){
-        const getTokenApiUrl = `https://graph.facebook.com/v21.0/oauth/access_token?client_id=${appId}&redirect_uri=${redirectUri}&client_secret=${appSecret}&code=${codeValue}$state=${stateValue}`
+    // const codeValue = queryParams.get("code");
+    // const stateValue = queryParams.get("state");
 
-        const response = await fetch(getTokenApiUrl);
+    // if(codeValue && stateValue){
+    //     const getTokenApiUrl = `https://graph.facebook.com/v21.0/oauth/access_token?client_id=${appId}&redirect_uri=${redirectUri}&client_secret=${appSecret}&code=${codeValue}$state=${stateValue}`
 
-        if(response.ok){
-            const data = await response.json();
-            console.log(data);
-            return data;
-        }else{
-            const error = await response.json();
-            console.log("There was an error: ", error);
-        };
-    }
+    //     const response = await fetch(getTokenApiUrl);
+
+    //     if(response.ok){
+    //         const data = await response.json();
+    //         console.log(data);
+    //         return data;
+    //     }else{
+    //         const error = await response.json();
+    //         console.log("There was an error: ", error);
+    //     };
+    // }
 }
