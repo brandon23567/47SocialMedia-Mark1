@@ -20,6 +20,10 @@
         window.open(apiUrl, "_blank");
     };
 
+    onMount(() => {
+        getTokenAndStateValues();
+    });
+
     const getTokenAndStateValues = async () => {
         const appId = "609016734854950";
         const redirectUri = "https://47-social-media-mark1-1klj.vercel.app/";
@@ -53,10 +57,6 @@
             };
         }
     };
-
-    onMount(() => {
-        getTokenAndStateValues();
-    });
 
 </script>
 
