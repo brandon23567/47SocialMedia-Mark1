@@ -13,50 +13,49 @@
     const handleFacebookLoginInput = () => {
         const uniqueStateValue = Math.random().toString(36).substring(2, 40);
         const appId = "609016734854950";
-        const redirectUri = "https://47-social-media-mark1-1klj.vercel.app/";
+        const redirectUri = "https://47-social-media-mark1-1klj.vercel.app/app/social_profiles";
         const permissions = "pages_manage_engagement,pages_manage_metadata,pages_manage_posts,pages_messaging,pages_read_engagement,pages_read_user_content,pages_show_list,publish_video,read_insights,instagram_basic";
         const apiUrl = `https://www.facebook.com/v21.0/dialog/oauth?client_id=${appId}&redirect_uri=${redirectUri}&state=${uniqueStateValue}&scope=${permissions}`
         
         window.open(apiUrl, "_blank");
     };
 
-    onMount(() => {
-        getTokenAndStateValues();
-    });
+    // const getTokenAndStateValues = async () => {
+    //     // const appId = "609016734854950";
+    //     const appId = import.meta.env.VITE_FB_APP_ID;
+    //     const appSecret = import.meta.env.VITE_FB_APP_SECRET_KEY;
+    //     const redirectUri = "https://47-social-media-mark1-1klj.vercel.app/app/social_profiles";
+    //     // const appSecret = "cf838cfeafecd8e3a3f6a87df3a29adb";
 
-    const getTokenAndStateValues = async () => {
-        const appId = "609016734854950";
-        const redirectUri = "https://47-social-media-mark1-1klj.vercel.app/";
-        // const appSecret = "cf838cfeafecd8e3a3f6a87df3a29adb";
-        // const appSecret = "";
+    //     const fullUrl = window.location.href;
+    //     const urlObject = new URL(fullUrl);
 
-        const fullUrl = window.location.href;
-        const urlObject = new URL(fullUrl);
+    //     const queryParams = urlObject.searchParams;
 
-        const queryParams = urlObject.searchParams;
+    //     const codeValue = queryParams.get("code");
+    //     const stateValue = queryParams.get("state");
 
-        const codeValue = queryParams.get("code");
-        const stateValue = queryParams.get("state");
+    //     console.log("Value of code: ", codeValue);
+    //     console.log("Value of state: ", stateValue);
 
-        console.log("Value of code: ", codeValue);
-        console.log("Value of state: ", stateValue);
+    //     if(codeValue && stateValue){
+    //         const getTokenApiUrl = `https://graph.facebook.com/v21.0/oauth/access_token?client_id=${appId}&redirect_uri=${redirectUri}&client_secret=${appSecret}&code=${codeValue}$state=${stateValue}`
 
-        if(codeValue && stateValue){
-            const getTokenApiUrl = `https://graph.facebook.com/v21.0/oauth/access_token?client_id=${appId}&redirect_uri=${redirectUri}&client_secret={something_here}&code={codeValue}$state=${stateValue}`
+    //         const response = await fetch(getTokenApiUrl);
 
-            const response = await fetch(getTokenApiUrl, {
-                method: "GET"
-            });
+    //         if(response.ok){
+    //             const data = await response.json();
+    //             console.log(data);
+    //         }else{
+    //             const error = await response.json();
+    //             console.log("There was an error: ", error);
+    //         };
+    //     }
+    // };
 
-            if(response.ok){
-                const data = await response.json();
-                console.log(data);
-            }else{
-                const error = await response.json();
-                console.log("There was an error: ", error);
-            };
-        }
-    };
+    // onMount(() => {
+    //     getTokenAndStateValues();
+    // });
 
 </script>
 
